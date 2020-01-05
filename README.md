@@ -86,9 +86,12 @@ query allCharacters (...) {
   - All data are flat in purpose of: 
         * if 2 queries fetch very slightly data, and after that, 
           one of the element is update, we need to change the data only at one place
-          
+         
+* apollo will update only element with the same id for free,
+  I need to return the same fields, because with that mutation
+  all the fields of that id will be changed. 
   
-
+* apollo never update some list, because this is too risky, 
 
 
 
