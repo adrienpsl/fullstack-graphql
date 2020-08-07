@@ -5,19 +5,23 @@
 
 module.exports = {
   Query: {
-    
-  },
-  Mutation: {
-    
-  },
-  Pet: {
-    img(pet) {
-      return pet.type === 'DOG'
-        ? 'https://placedog.net/300/300'
-        : 'http://placekitten.com/300/300'
+    // first value '_' is the initial value
+    // second is arguments
+    pets(_, __, ctx) {
+      return ctx.models.Pet.findMany()
     }
   },
-  User: {
-    
-  }
+  // Mutation: {
+  //
+  // },
+  // Pet: {
+  //   img(pet) {
+  //     return pet.type === 'DOG'
+  //       ? 'https://placedog.net/300/300'
+  //       : 'http://placekitten.com/300/300'
+  //   }
+  // },
+  // User: {
+  //
+  // }
 }
