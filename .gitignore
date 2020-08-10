@@ -64,3 +64,10 @@ typings/
 dist
 coverage
 .cache
+/.idea/.gitignore
+/.idea/fullstack-graphql.iml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/saveactions_settings.xml
+/toto.md
+/.idea/vcs.xml
